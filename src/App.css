@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  /* background-color: #111111;
+  color: white; */
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  background-color: #111111;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Home */
+#home .hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border: 1px solid white;
+  background-color: transparent;
+  height: 85%;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 2fr 3fr;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.shape {
+  position: fixed;
+  width: 30%;
+  height: 100vh;
+  background-color: #ffb400;
+  clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+}
+
+.profile-pic {
+  height: 100%;
+  width: 85%;
+  overflow: hidden;
+  border-radius: 3rem;
+
+}
+
+.self-intro {
+  width: 90%;
+}
+
+.self-intro .title-section {
+  position: relative;
+}
+
+.self-intro h1 {
+  font-size: 4rem;
+  text-align: left;
+  position: relative;
+  padding-left: 70px;
+  color: #ffb400;
+}
+
+.self-intro h1 div {
+  color: white;
+}
+
+.self-intro h1::before{
+  /* display: inline; */
+  position: absolute;
+  left: 0;
+  top: 2rem;
+  height: 4px;
+  width: 40px;
+  border-radius: 10px;
+  content: "";
+  background-color: #ffb400;
+}
+
+.self-intro p {
+  margin-top: 1.5rem; 
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
+
+.self-intro .btn {
+  position: relative;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid #ffb400;
+  background-color: #111111;
+  color: white;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  height: 4rem;
+  width: 16rem;
+  padding-right: 0;
+
+  box-shadow: inset 0 0 0 #111111;
+  transition: ease-in 0.3s;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.self-intro .btn span {
+  margin: 0 auto;
+}
+
+
+.self-intro .btn:hover {
+  cursor: pointer;
+  box-shadow: inset -20rem 0 0 #ffb400;
+}
+
+.arrow {
+  margin-left: 1rem;
+  border: none;
+  border-radius: 50%;
+  
+  font-size: 4rem;
+  background-color: white;
+  color: #ffb400;
+}
+
+.self-intro .btn-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
