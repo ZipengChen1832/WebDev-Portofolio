@@ -16,7 +16,7 @@ export default function Home() {
                     <h1>I'm Brandon Chen<div>Web Developer</div>
                     </h1>
                 </div>
-                <p>I am a front-end developer focused on creating clean and user-friendly experiences, I am passionate about building excellent software that improves the lives of those around me</p>
+                <p>I am a web developer focused on creating clean and user-friendly experiences, I am passionate about building excellent software that improves the lives of those around me</p>
                 <div className="btn-container">
                     <button className='portfolio-btn btn'>
                         <span>My Portfolio</span>
