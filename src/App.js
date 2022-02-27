@@ -12,7 +12,7 @@ import { useEffect } from 'react';
 
 function App() {
   useEffect(()=>{
-    document.title = "Web Portfolio     border: 1px solid white;Brandon Chen"
+    document.title = "Web Portfolio Brandon Chen"
   },[])
 
   return <BrowserRouter>
