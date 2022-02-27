@@ -1,0 +1,51 @@
+:root {
+    --background-color: #ffb400;
+}
+
+.react-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: (-50%,-50%);
+
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: react-logo-rotate 15s linear infinite;
+}
+
+.react-logo::before {
+    position: absolute;
+    content: "";
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: var(--background-color);
+}
+
+.ellipse {
+    position: absolute;
+    border: 0.5rem solid var(--background-color);
+    height: 4rem;
+    width: 12rem;
+    border-radius: 250%;
+}
+
+.ellipse-2 {
+    transform: rotate(60deg);
+}
+.ellipse-3 {
+    transform: rotate(120deg);
+}
+
+
+@keyframes react-logo-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
