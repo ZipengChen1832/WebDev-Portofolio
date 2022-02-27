@@ -608,7 +608,6 @@ body {
   #home .hero {
     position: static;
     transform: none;
-    border: 1px solid white;
     width: 50vw;
     grid-template-columns: 1fr;
     justify-content: center;
