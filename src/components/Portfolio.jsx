@@ -9,7 +9,7 @@ export default function Portfolio() {
         </div>
         <section className="projects">
             <article className='project'>
-                <div className='img-container' onClick={()=>{window.open("https://zipengchenreactecommerce.netlify.app")}}>
+                <div className='img-container' onClick={()=>{window.open("https://brandonchenreactecommerce.netlify.app")}}>
                     <img src='/images/ecommerce.png' alt='Ecommerce Site'></img>
                 </div>
                 <div className='desc'>
@@ -27,7 +27,7 @@ export default function Portfolio() {
                         <li>Store user data such as shopping list and user info using firebase realtime database</li>
                     </ul>
                     <div className='links'>
-                        <span onClick={()=>{window.open("https://zipengchenreactecommerce.netlify.app")}}>Visit Site</span>
+                        <span onClick={()=>{window.open("https://brandonchenreactecommerce.netlify.app")}}>Visit Site</span>
                         <span onClick={()=>{window.open("https://github.com/ZipengChen1832/React-Ecommerce-Project")}}>View Code</span>
                     </div>
                 </div>
