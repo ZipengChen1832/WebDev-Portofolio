@@ -295,6 +295,7 @@ body {
 #portfolio .project {
   display: grid;
   grid-template-columns: 2fr 3fr;
+  margin-bottom: 4rem;
 }
 
 #portfolio .img-container {
