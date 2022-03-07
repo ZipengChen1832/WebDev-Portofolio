@@ -43,11 +43,9 @@ export default function Portfolio() {
                         <span>CSS</span>
                     </div>
                     <ul className='features'>
-                        <li>Create accessible fitness e-commerce website with responsive design</li>
-                        <li>Allow users to navigate through different pages by using react-router-dom v6</li>
-                        <li>Categorize products and allows user to view selected category</li>
-                        <li>Implemented user authentication by using firebase, each account stores its own data</li>
-                        <li>Store user data such as shopping list and user info using firebase realtime database</li>
+                        <li>Implemente animation to let the ball move </li>
+                        <li>Employed collision detection for the ball to bounce</li>
+                        <li>Display the score and update when a loss is detected </li>
                     </ul>
                     <div className='links'>
                         <span onClick={()=>{window.open("https://bcpongballclone.netlify.app/")}}>Visit Site</span>
