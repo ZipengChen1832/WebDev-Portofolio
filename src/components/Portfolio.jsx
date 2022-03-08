@@ -4,7 +4,7 @@ export default function Portfolio() {
   return (
     <main id="portfolio">
         <div className='shadow'>
-            PORTFOLIO
+            <div className='shade'>PORTFOLIO</div>
             <h1>MY <span>WORKS</span></h1>
         </div>
         <section className="projects">
@@ -27,8 +27,8 @@ export default function Portfolio() {
                         <li>Store user data such as shopping list and user info using firebase realtime database</li>
                     </ul>
                     <div className='links'>
-                        <span onClick={()=>{window.open("https://brandonchenreactecommerce.netlify.app")}}>Visit Site</span>
-                        <span onClick={()=>{window.open("https://github.com/ZipengChen1832/React-Ecommerce-Project")}}>View Code</span>
+                        <div onClick={()=>{window.open("https://brandonchenreactecommerce.netlify.app")}}>Visit Site</div>
+                        <div onClick={()=>{window.open("https://github.com/ZipengChen1832/React-Ecommerce-Project")}}>View Code</div>
                     </div>
                 </div>
             </article>
@@ -45,11 +45,13 @@ export default function Portfolio() {
                     <ul className='features'>
                         <li>Implemente animation to let the ball move </li>
                         <li>Employed collision detection for the ball to bounce</li>
+                        <li>Bounce angle is calculated based on the impact point</li>
+                        <li>The ball's speed increases with each collision</li>
                         <li>Display the score and update when a loss is detected </li>
                     </ul>
                     <div className='links'>
-                        <span onClick={()=>{window.open("https://bcpongballclone.netlify.app/")}}>Visit Site</span>
-                        <span onClick={()=>{window.open("https://github.com/ZipengChen1832/js-pongballgame")}}>View Code</span>
+                        <div onClick={()=>{window.open("https://bcpongballclone.netlify.app/")}}>Visit Site</div>
+                        <div onClick={()=>{window.open("https://github.com/ZipengChen1832/js-pongballgame")}}>View Code</div>
                     </div>
                 </div>
             </article>

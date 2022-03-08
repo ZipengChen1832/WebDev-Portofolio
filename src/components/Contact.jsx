@@ -14,8 +14,8 @@ export default function Contact() {
   return (
     <main id='contact'>
       <div className='shadow'>
-        CONTACT
-        <h1>GET IN <span>TOUCH</span></h1>
+        <div className='shade'>IN TOUCH</div>
+        <h1>CON<span>TACT</span></h1>
       </div>
       <div className='contact-section'>
         <div className="contact-info">
@@ -49,8 +49,8 @@ export default function Contact() {
         <form action="https://formsubmit.co/zipengchen1832@gmail.com" method='POST' 
         className="contact-form" onSubmit={handleSubmit}>
           <div className='first-line'>
-            <input className='name' name='name' placeholder='YOUR NAME' required/>
-            <input className='email' name='email' placeholder='YOUR EMAIL' required/>
+            <input className='name' name='name' placeholder='NAME' required/>
+            <input className='email' name='email' placeholder='EMAIL' required/>
           </div>
           <div className='subject-line'>
             <input className='subject' name='_subject' placeholder='YOUR SUBJECT' required/>

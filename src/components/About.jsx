@@ -6,7 +6,7 @@ export default function About() {
   return (
     <main id="about">
       <div className='shadow'>
-        ABOUT
+        <div className='shade'>ABOUT</div>
         <h1>ABOUT <span>ME</span></h1>
       </div>
 
@@ -14,7 +14,7 @@ export default function About() {
         <article className='paragraph'>
           <h1>Background</h1>
           <p>
-            I am a web developer specializing in front-end development. I am experienced with React Native and 
+            I am a web developer specializing in front-end development. I am experienced with React.js and 
             have built multiple sites with it. The most common core concepts I have demonstrated in my sites include: 
             CRUD operations, react hooks, and react router. I've also learned to incorporate third-party apps such as
             firebase to add more utility to my projects.

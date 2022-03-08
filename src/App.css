@@ -270,7 +270,7 @@ body {
   transform: translate(-50%,-50%);
   color: white;
   background-color: transparent;
-  font-size: 3.5rem;
+  font-size: 0.5em;
   font-weight: 1000;
   white-space: nowrap;
 }
@@ -295,7 +295,13 @@ body {
 #portfolio .project {
   display: grid;
   grid-template-columns: 2fr 3fr;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+
+  border-bottom: 10px solid #111111;
+  /* padding: 0.5rem; */
+  /* width: 100%; */
+  /* background-color: red; */
 }
 
 #portfolio .img-container {
@@ -351,19 +357,21 @@ body {
   margin-top: 1rem;
 }
 
-#portfolio .links span {
+#portfolio .links div {
   margin-right: 1rem;
   font-size: 1.5rem;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
   border: 3px double #ffb400;
   padding: 0.2rem 1rem;
+  margin-bottom: 0.5rem;
 
-  /* display: inline-block; */
+  display: inline-block;
   transition: ease-out 0.1s;
 }
 
-#portfolio .links span:hover {
+#portfolio .links div:hover {
   cursor: pointer;
   background-color: #ffb400;
   color: #222222;
@@ -453,9 +461,6 @@ body {
   grid-template-columns: 1fr 2fr;
 }
 
-.contact-info {
-
-}
 
 .contact-info .title {
   font-size: 2rem;
@@ -586,14 +591,17 @@ body {
 
 
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1024px) {
   #home, about, #portfolio, #contact {
     margin-bottom: 4rem;
   }
 
+  .shadow .shade {
+    font-size: calc(1rem + 10vw);
+  }
 
-  .shadow {
-    font-size: 5rem;
+  .shawdow {
+    color: red;
   }
 
   #home .shape {
@@ -643,7 +651,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-  }1
+  }
 
   #home .social-media {
     text-align: center;
@@ -680,7 +688,7 @@ body {
 
   #portfolio .project .desc {
     width: 100%;
-    margin: 1rem auto 4rem;
+    margin: 1rem auto;
   }
 
 
@@ -702,8 +710,28 @@ body {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
+
+  #contact .contact-form{
+    margin: 0;
+    width: 100%;
+  }
   
   
 }
 
 
+@media screen and (max-width:500px) {
+  .shadow .shade {
+    font-size: 3rem;
+    visibility: hidden;
+  }
+
+  .shadow h1 {
+    font-size: 3rem;
+  }
+
+  #portfolio .links {
+    display: grid;
+
+  }
+}
